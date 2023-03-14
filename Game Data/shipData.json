@@ -1,0 +1,3379 @@
+// game data file for Artemis Cosmos (Artemis 3), a multiplayer space game
+//
+// the raw format of this file is HJSON, which is a more human-usable variant of JSON.
+//
+// this is a comment line
+//
+// a valid line begins with a single word, prepended with a # symbol.
+
+{
+  //------------------------------------------------------------------
+  "#credits-text": "Designed and programmed by^^Thom Robertson",
+
+  //------------------------------------------------------------------
+  "#ship-list": [
+    {
+      //---------------------------------- data for default 3d data (if other data not found) --------------------------------
+      "key": "unknown",
+      "name": "unknown",
+      "side": "unknown",
+      "artfileroot": "unknown",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 1.0
+    },
+    {
+      //---------------------------------- data for default 3d data (if other data not found) --------------------------------
+      "key": "jump_point_tether",
+      "name": "Tether",
+      "side": "unknown",
+      "artfileroot": "unknown",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 1.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_command",
+      "name": "Command Starbase",
+      "side": "port",
+      "artfileroot": "tsn-big-base",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_civil",
+      "name": "Civilian Starbase",
+      "side": "port",
+      "artfileroot": "civil_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_industry",
+      "name": "Industrial Starbase",
+      "side": "port",
+      "artfileroot": "industry_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_science",
+      "name": "Science Starbase",
+      "side": "port",
+      "artfileroot": "science_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_arvonian",
+      "name": "Arvonian Base",
+      "side": "arvonian",
+      "artfileroot": "arvonian_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_skaraan",
+      "name": "Skaraan Base",
+      "side": "skaraan",
+      "artfileroot": "skaraan_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_torgoth",
+      "name": "Torgoth Base",
+      "side": "torgoth",
+      "artfileroot": "torgoth_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+    {
+      //---------------------------------- Starbase data --------------------------------
+      "key": "starbase_kralien",
+      "name": "Kralien Base",
+      "side": "kralien",
+      "artfileroot": "kralien_station",
+      "meshscale": 10.0,
+      "radarscale": 1.0,
+      "exclusionradius": 120.0
+    },
+
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "asteroid_crystal_blue",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_1",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "asteroid_crystal_red",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_2",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "asteroid_crystal_yellow",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_3",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "asteroid_crystal_silver",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_4",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "asteroid_crystal_green",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_5",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "plain_asteroid_6",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_6",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "plain_asteroid_7",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_7",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "plain_asteroid_8",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_8",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "plain_asteroid_9",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_9",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "plain_asteroid_10",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_10",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- asteroid data --------------------------------
+      "key": "plain_asteroid_11",
+      "name": "Asteroid",
+      "side": "asteroid",
+      "artfileroot": "Asteroid_11",
+      "meshscale": 0.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- ship data --------------------------------
+      "key": "tsn_light_cruiser",
+      "name": "Light Cruiser",
+      "side": "TSN",
+      "artfileroot": "artemis",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_battle_cruiser",
+      "name": "Battle Cruiser",
+      "side": "TSN",
+      "artfileroot": "BattleCruiser",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Battle Cruiser^Beam-heavy combat vessel of the TSN.^4 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 5 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 19,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 250, 150 ],
+      "hullpoints": 4,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 123.391060, 16.135468, 260.963013 ],
+            [ 45.790039, 16.888229, 293.375427 ],
+            [ -123.391060, 16.135468, 260.963013 ],
+            [ -45.790039, 16.888229, 293.375427 ]
+          ],
+          "beamcolor": [ "green", "green", "green", "green" ],
+          "arccolor": [ "green", "green", "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 105.641075, 56.126984, -259.255127 ],
+            [ -105.641075, 56.126984, -259.255127 ],
+            [ 0, 18.329865, -297.645447 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_missile_cruiser",
+      "name": "Missile Cruiser",
+      "side": "TSN",
+      "artfileroot": "MissileCruiser",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Missile Cruiser^Specialized vessel of the TSN.^4 Torpedo tubes^Stores for 8 nukes, 20 homing, 14 mines, 12 ECM, 6 PShock.",
+      "tubecount": 4,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 21,
+      "internalmaph": 19,
+      "internalsymmetry": 1,
+
+      "shields": [ 110, 80 ],
+      "hullpoints": 5,
+
+      "hullportsets": [
+        {
+          "type": "engine",
+          "position": [
+            [ 42.795090, 9.302917, -260.519836 ],
+            [ -42.795090, 9.302917, -260.519836 ],
+            [ -94.771751, 9.120438, -246.240906 ],
+            [ 94.771751, 9.120438, -246.240906 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_battle_cruiser2",
+      "name": "Battle Cruiser 2",
+      "side": "TSN",
+      "artfileroot": "TA",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_destroyer",
+      "name": "Destroyer",
+      "side": "TSN",
+      "artfileroot": "TB",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_dreadnaught",
+      "name": "Dreadnaught",
+      "side": "TSN",
+      "artfileroot": "TC",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_escort",
+      "name": "Escort",
+      "side": "TSN",
+      "artfileroot": "TD",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_pocket_cruiser",
+      "name": "Pocket Cruiser",
+      "side": "TSN",
+      "artfileroot": "TE",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_support_cruiser",
+      "name": "Support Cruiser",
+      "side": "TSN",
+      "artfileroot": "TF",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "tsn_scout",
+      "name": "Scout",
+      "side": "TSN",
+      "artfileroot": "TG",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "TSN Cruiser^Standard long patrol vessel of the TSN.^2 forward beams^2 Torpedo tubes^Stores for 2 nukes, 8 homing, 6 mines, 4 ECM, 2 PShock.",
+      "tubecount": 2,
+      "torpedostorage": [ 8, 8, 8, 8 ],
+
+      "internalmapscale": 1.0,
+      "internalmapw": 18,
+      "internalmaph": 17,
+      "internalsymmetry": 1,
+
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -102.14, 8.35, 258.74 ],
+            [ 102.14, 8.35, 258.74 ]
+          ],
+          "beamcolor": [ "green", "green" ],
+          "arccolor": [ "green", "green" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -82.93, 5, -240.89 ],
+            [ 82.93, 5, -240.89 ],
+            [ 0, -9.22, -300 ],
+            [ 0, 29.64, -300 ]
+          ],
+          "exhaustcolor": [ "red", "green", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "torgoth_destroyer",
+      "name": "Barbarian",
+      "side": "Torgoth",
+      "artfileroot": "Torgoth_Destroyer",
+      "meshscale": 3,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": -1,
+      "shields": [ 350, 350 ],
+      "hullpoints": 3,
+      "long_desc": "Displacement: 80 kt. Armament: 6 medium beams, 1 drone launcher.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 10.921543, -0.241075, -0.550209 ],
+            [ 10.182248, -0.349895, -1.238373 ],
+            [ 8.903904, -0.359910, -2.223218 ],
+            [ 10.921543, -0.241075, 0.550209 ],
+            [ 10.182248, -0.349895, 1.238373 ],
+            [ 8.903904, -0.359910, 2.223218 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -10.936804, 1.226935, 3.551034 ],
+            [ -10.936805, -0.400767, 4.467165 ],
+            [ -10.936804, 1.226935, -3.551034 ],
+            [ -10.936805, -0.400767, -4.467165 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "torgoth_goliath",
+      "name": "Goliath",
+      "side": "Torgoth",
+      "artfileroot": "Torgoth1",
+      "meshscale": 3,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": -1,
+      "shields": [ 350, 350 ],
+      "hullpoints": 3,
+      "long_desc": "Displacement: 80 kt. Armament: 6 medium beams, 1 drone launcher.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 10.921543, -0.241075, -0.550209 ],
+            [ 10.182248, -0.349895, -1.238373 ],
+            [ 8.903904, -0.359910, -2.223218 ],
+            [ 10.921543, -0.241075, 0.550209 ],
+            [ 10.182248, -0.349895, 1.238373 ],
+            [ 8.903904, -0.359910, 2.223218 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -10.936804, 1.226935, 3.551034 ],
+            [ -10.936805, -0.400767, 4.467165 ],
+            [ -10.936804, 1.226935, -3.551034 ],
+            [ -10.936805, -0.400767, -4.467165 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "torgoth_leviathan",
+      "name": "Leviathan",
+      "side": "Torgoth",
+      "artfileroot": "Torgoth2",
+      "meshscale": 3,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": -1,
+      "long_desc": "Displacement: 90 kt. Armament: 4 medium beams, 1 heavy beam, 1 drone launcher.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "shields": [ 600, 600 ],
+      "hullpoints": 4,
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Spinal Beam",
+          "position": [
+            [ 0, -0.350561, 0 ]
+          ],
+          "beamcolor": [ "red" ],
+          "arccolor": [ "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 2000
+        },
+        {
+          "type": "beam",
+          "uiname": "Main Beams",
+          "position": [
+            [ 10.838148, -0.365613, -2.283384 ],
+            [ 7.873487, -0.371853, -3.625443 ],
+            [ 10.838148, -0.365613, 2.283384 ],
+            [ 7.873487, -0.371853, 3.625443 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -12.310314, -0.367441, 5.473208 ],
+            [ -5.929266, 0.645546, 4.236503 ],
+            [ 12.310314, -0.367441, 5.473208 ],
+            [ 5.929266, 0.645546, 4.236503 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "torgoth_behemoth",
+      "name": "Behemoth",
+      "side": "Torgoth",
+      "artfileroot": "Torgoth3",
+      "meshscale": 3,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": -1,
+      "long_desc": "Displacement: 150 kt. Armament: 10 standard beams, 1 drone launcher",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "shields": [ 600, 600 ],
+      "hullpoints": 5,
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 15.114258, 0.080965, 1.060543 ],
+            [ 14.414129, 0.139996, 1.919003 ],
+            [ 13.576025, 0.001238, 2.664568 ],
+            [ 12.040915, 0.008815, 3.372972 ],
+            [ 15.114258, 0.080965, -1.060543 ],
+            [ 14.414129, 0.139996, -1.919003 ],
+            [ 13.576025, 0.001238, -2.664568 ],
+            [ 12.040915, 0.008815, -3.372972 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red", "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red", "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -9.853470, 0.756469, 2.172873 ],
+            [ -9.853470, 0.756469, -2.172873 ],
+            [ -9.444847, 1.347422, 1.831435 ],
+            [ -9.444847, 1.347422, -1.831435 ],
+            [ -10.915940, -0.217384, 0.756315 ],
+            [ -10.915940, -0.217384, -0.756315 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "arvonian_fighter",
+      "name": "Fighter",
+      "side": "Arvonian",
+      "artfileroot": "ArvoFighter",
+      "meshscale": 0.04,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 2,
+      "long_desc": "Displacement: 0.015 kt. Armament: 2 light beams.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 11,
+      "internalmaph": 13,
+      "internalsymmetry": 1,
+
+      "shields": [ 15, 15 ],
+      "hullpoints": 1,
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -58.933334, -2.604980, -256.636108 ],
+            [ 58.933334, -2.604980, -256.636108 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 4.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 74.976425, -7.914612, 122.241882 ],
+            [ -74.976425, -7.914612, 122.241882 ],
+            [ 0, 2.803406, 104.245667 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "arvonian_destroyer",
+      "name": "Destroyer",
+      "side": "Arvonian",
+      "artfileroot": "Arvonian_des",
+      "meshscale": 0.06,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 2,
+      "shields": [ 120, 120 ],
+      "hullpoints": 2,
+      "long_desc": "The basic escort ship of the Arvonian fleet.  Displacement: 35 kt. Armament: 4 long-range beams.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 14,
+      "internalmaph": 14,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -164.914261, 4.695282, -347.761902 ],
+            [ 164.914261, 4.695282, -347.761902 ],
+            [ -33.414612, 42.028595, -346.488953 ],
+            [ 33.414612, 42.028595, -346.488953 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 194.732452, -26.320313, 347.364990 ],
+            [ -194.732452, -26.320313, 347.364990 ],
+            [ 39.042057, 15, 166.712158 ],
+            [ -39.042057, 15, 166.712158 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "arvonian_light_carrier",
+      "name": "Light Carrier",
+      "side": "Arvonian",
+      "artfileroot": "ArvoCarrier1",
+      "meshscale": 0.05,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 2,
+      "shields": [ 120, 120 ],
+      "hullpoints": 2,
+      "long_desc": "Displacement: 45 kt. Armament: 6 long-range beams. Complement: 12 fighters.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 21,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -164.914261, 4.695282, -347.761902 ],
+            [ 164.914261, 4.695282, -347.761902 ],
+            [ -33.414612, 42.028595, -346.488953 ],
+            [ 33.414612, 42.028595, -346.488953 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 194.732452, -26.320313, 347.364990 ],
+            [ -194.732452, -26.320313, 347.364990 ],
+            [ 39.042057, 15, 166.712158 ],
+            [ -39.042057, 15, 166.712158 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "arvonian_carrier",
+      "name": "Carrier",
+      "side": "Arvonian",
+      "artfileroot": "ArvoCarrier2",
+      "meshscale": 0.05,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 2,
+      "shields": [ 120, 120 ],
+      "hullpoints": 2,
+      "long_desc": "Displacement: 45 kt. Armament: 6 long-range beams. Complement: 12 fighters.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 21,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -164.914261, 4.695282, -347.761902 ],
+            [ 164.914261, 4.695282, -347.761902 ],
+            [ -33.414612, 42.028595, -346.488953 ],
+            [ 33.414612, 42.028595, -346.488953 ]
+          ],
+          "beamcolor": [ "red", "red", "red", "red" ],
+          "arccolor": [ "red", "red", "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 194.732452, -26.320313, 347.364990 ],
+            [ -194.732452, -26.320313, 347.364990 ],
+            [ 39.042057, 15, 166.712158 ],
+            [ -39.042057, 15, 166.712158 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "transport_ship",
+      "name": "Transport",
+      "side": "Troop",
+      "artfileroot": "transport",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 120, 120 ],
+      "hullpoints": 2,
+      "long_desc": "An unarmed transport, filled with light cargo and civilians.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "engine",
+          "position": [
+            [ -2.008, 1.654, -9.889 ],
+            [ -4.550, 1.819, -9.114 ],
+            [ -7.225, 1.729, -8.379 ],
+            [ 2.008, 1.654, -9.889 ],
+            [ 4.550, 1.819, -9.114 ],
+            [ 7.225, 1.729, -8.379 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "luxury_liner",
+      "name": "Luxury Liner",
+      "side": "private",
+      "artfileroot": "leisure_vessel",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 120, 120 ],
+      "hullpoints": 2,
+      "long_desc": "An unarmed luxury ship, filled with civilians in fancy clothes.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "engine",
+          "position": [
+            [ -2.008, 1.654, -9.889 ],
+            [ -4.550, 1.819, -9.114 ],
+            [ -7.225, 1.729, -8.379 ],
+            [ 2.008, 1.654, -9.889 ],
+            [ 4.550, 1.819, -9.114 ],
+            [ 7.225, 1.729, -8.379 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "cargo_ship",
+      "name": "Cargo",
+      "side": "Bulk",
+      "artfileroot": "cargo",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 200, 200 ],
+      "hullpoints": 2,
+      "long_desc": "An unarmed bulk freighter, slowly moving cheap cargo between the stars.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -3.444, 2.855, 7.947 ],
+            [ 3.444, 2.855, 7.947 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -3.080, 3.381, -7.546 ],
+            [ -2.098, 3.406, -8.026 ],
+            [ -1.244, 3.400, -8.731 ],
+            [ -0.397, 2.136, -10.544 ],
+            [ 3.080, 3.381, -7.546 ],
+            [ 2.098, 3.406, -8.026 ],
+            [ 1.244, 3.400, -8.731 ],
+            [ 0.397, 2.136, -10.544 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "science_ship",
+      "name": "Science",
+      "side": "Bulk",
+      "artfileroot": "science_vessel",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 200, 200 ],
+      "hullpoints": 2,
+      "long_desc": "A peaceful ship of Science, moving between the stars.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -3.444, 2.855, 7.947 ],
+            [ 3.444, 2.855, 7.947 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -3.080, 3.381, -7.546 ],
+            [ -2.098, 3.406, -8.026 ],
+            [ -1.244, 3.400, -8.731 ],
+            [ -0.397, 2.136, -10.544 ],
+            [ 3.080, 3.381, -7.546 ],
+            [ 2.098, 3.406, -8.026 ],
+            [ 1.244, 3.400, -8.731 ],
+            [ 0.397, 2.136, -10.544 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "biomech_a",
+      "name": "Biomech A",
+      "side": "biomech",
+      "artfileroot": "Drone1",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 200, 200 ],
+      "hullpoints": 2,
+      "long_desc": "A biomech.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -3.444, 2.855, 7.947 ],
+            [ 3.444, 2.855, 7.947 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -3.080, 3.381, -7.546 ],
+            [ -2.098, 3.406, -8.026 ],
+            [ -1.244, 3.400, -8.731 ],
+            [ -0.397, 2.136, -10.544 ],
+            [ 3.080, 3.381, -7.546 ],
+            [ 2.098, 3.406, -8.026 ],
+            [ 1.244, 3.400, -8.731 ],
+            [ 0.397, 2.136, -10.544 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "biomech_b",
+      "name": "Biomech B",
+      "side": "biomech",
+      "artfileroot": "Drone2",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 200, 200 ],
+      "hullpoints": 2,
+      "long_desc": "A biomech.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -3.444, 2.855, 7.947 ],
+            [ 3.444, 2.855, 7.947 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -3.080, 3.381, -7.546 ],
+            [ -2.098, 3.406, -8.026 ],
+            [ -1.244, 3.400, -8.731 ],
+            [ -0.397, 2.136, -10.544 ],
+            [ 3.080, 3.381, -7.546 ],
+            [ 2.098, 3.406, -8.026 ],
+            [ 1.244, 3.400, -8.731 ],
+            [ 0.397, 2.136, -10.544 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "biomech_c",
+      "name": "Biomech C",
+      "side": "biomech",
+      "artfileroot": "Drone3",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 200, 200 ],
+      "hullpoints": 2,
+      "long_desc": "A biomech.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -3.444, 2.855, 7.947 ],
+            [ 3.444, 2.855, 7.947 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -3.080, 3.381, -7.546 ],
+            [ -2.098, 3.406, -8.026 ],
+            [ -1.244, 3.400, -8.731 ],
+            [ -0.397, 2.136, -10.544 ],
+            [ 3.080, 3.381, -7.546 ],
+            [ 2.098, 3.406, -8.026 ],
+            [ 1.244, 3.400, -8.731 ],
+            [ 0.397, 2.136, -10.544 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "biomech_d",
+      "name": "Biomech D",
+      "side": "biomech",
+      "artfileroot": "Drone4",
+      "meshscale": 2.5,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 200, 200 ],
+      "hullpoints": 2,
+      "long_desc": "A biomech.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -3.444, 2.855, 7.947 ],
+            [ 3.444, 2.855, 7.947 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -3.080, 3.381, -7.546 ],
+            [ -2.098, 3.406, -8.026 ],
+            [ -1.244, 3.400, -8.731 ],
+            [ -0.397, 2.136, -10.544 ],
+            [ 3.080, 3.381, -7.546 ],
+            [ 2.098, 3.406, -8.026 ],
+            [ 1.244, 3.400, -8.731 ],
+            [ 0.397, 2.136, -10.544 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "skaraan_defiler",
+      "name": "Defiler",
+      "side": "Skaraan",
+      "artfileroot": "skar1",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "Displacement: 40 kt. Armament: 2 medium beams. The Skaraan's lightest warship.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "shields": [ 40, 40 ],
+      "hullpoints": 2,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -79.216499, 3.559326, 288.730103 ],
+            [ 79.216499, 3.559326, 288.730103 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 71.930328, 30, -265.888550 ],
+            [ -71.930328, 30, -265.888550 ],
+            [ 75.854797, -11, -254.416321 ],
+            [ -75.854797, -11, -254.416321 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "skaraan_enforcer",
+      "name": "Enforcer",
+      "side": "Skaraan",
+      "artfileroot": "skar2",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "Displacement: 40 kt. Armament: 2 medium beams. The Skaraan's lightest warship.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "shields": [ 40, 40 ],
+      "hullpoints": 2,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -79.216499, 3.559326, 288.730103 ],
+            [ 79.216499, 3.559326, 288.730103 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 71.930328, 30, -265.888550 ],
+            [ -71.930328, 30, -265.888550 ],
+            [ 75.854797, -11, -254.416321 ],
+            [ -75.854797, -11, -254.416321 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "skaraan_executor",
+      "name": "Executor",
+      "side": "Skaraan",
+      "artfileroot": "skar3",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "long_desc": "Displacement: 40 kt. Armament: 2 medium beams. The Skaraan's lightest warship.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "shields": [ 40, 40 ],
+      "hullpoints": 2,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ -79.216499, 3.559326, 288.730103 ],
+            [ 79.216499, 3.559326, 288.730103 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ 71.930328, 30, -265.888550 ],
+            [ -71.930328, 30, -265.888550 ],
+            [ 75.854797, -11, -254.416321 ],
+            [ -75.854797, -11, -254.416321 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "kralien_cruiser",
+      "name": "Cruiser",
+      "side": "Kralien",
+      "artfileroot": "Kralien1",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Displacement: 17 kt. Armament: 2 x rapid-fire beams. Heart of the Kralien fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "kralien_battleship",
+      "name": "Battleship",
+      "side": "Kralien",
+      "artfileroot": "Kralien2",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Displacement: 17 kt. Armament: 2 x rapid-fire beams. Heart of the Kralien fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "kralien_dreadnaught",
+      "name": "Dreadnaught",
+      "side": "Kralien",
+      "artfileroot": "Kralien3",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+
+      "internalmapscale": 1.0,
+      "internalmapw": 17,
+      "internalmaph": 15,
+      "internalsymmetry": 1,
+
+      "shields": [ 120, 120 ],
+      "hullpoints": 4,
+      "long_desc": "Displacement: 25 kt.  Armament: 2 rapid fire beams, 1 heavy beam. The most dangerous Kralien ship.",
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beam",
+          "position": [
+            [ 0, -9.229431, 197.124084 ]
+          ],
+          "beamcolor": [ "red" ],
+          "arccolor": [ "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1400
+        },
+        {
+          "type": "beam",
+          "uiname": "Secondary Beams",
+          "position": [
+            [ -48.787056, -28.751709, 226.376892 ],
+            [ 48.787056, -28.751709, 226.376892 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -108.385948, -23.283508, -57.274475 ],
+            [ 108.385948, -23.283508, -57.274475 ],
+            [ -39.380203, -5.825653, -189.210388 ],
+            [ 39.380203, -5.825653, -189.210388 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+
+
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "pirate_fighter",
+      "name": "Avenger",
+      "side": "pirate",
+      "artfileroot": "pirate_fighter",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Fighter of the pirate fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "pirate_longbow",
+      "name": "Longbow",
+      "side": "pirate",
+      "artfileroot": "longbow",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Fighter of the pirate fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "pirate_strongbow",
+      "name": "Strongbow",
+      "side": "pirate",
+      "artfileroot": "strongbow",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Fighter of the pirate fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "pirate_brigantine",
+      "name": "Brigantine",
+      "side": "pirate",
+      "artfileroot": "Brigantine",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Fighter of the pirate fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_avenger",
+      "name": "Avenger",
+      "side": "Ximni",
+      "artfileroot": "XA",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Fighter of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_battleship",
+      "name": "Battleship",
+      "side": "Ximni",
+      "artfileroot": "XB",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_corsair",
+      "name": "Corsair",
+      "side": "Ximni",
+      "artfileroot": "XC",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_destroyer",
+      "name": "Destroyer",
+      "side": "Ximni",
+      "artfileroot": "XD",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_dreadnaught",
+      "name": "Dreadnaught",
+      "side": "Ximni",
+      "artfileroot": "XDR",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_escort",
+      "name": "Escort",
+      "side": "Ximni",
+      "artfileroot": "XE",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_light_cruiser",
+      "name": "Light Cruiser",
+      "side": "Ximni",
+      "artfileroot": "XLC",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_missile_cruiser",
+      "name": "Missile Cruiser",
+      "side": "Ximni",
+      "artfileroot": "XMC",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    //---------------------------------- ship data --------------------------------
+    {
+      "key": "xim_scout",
+      "name": "Scout",
+      "side": "Ximni",
+      "artfileroot": "XS",
+      "meshscale": 0.1,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0,
+      "meshrotate": 0,
+      "shields": [ 80, 80 ],
+      "hullpoints": 3,
+      "long_desc": "Ship of the Ximni fleet.",
+
+      "internalmapscale": 1.0,
+      "internalmapw": 20,
+      "internalmaph": 20,
+      "internalsymmetry": 1,
+
+      "hullportsets": [
+        {
+          "type": "beam",
+          "uiname": "Primary Beams",
+          "position": [
+            [ 38.749691, -12.556183, 255.599426 ],
+            [ -38.749691, -12.556183, 255.599426 ]
+          ],
+          "beamcolor": [ "red", "red" ],
+          "arccolor": [ "red", "red" ],
+          "damage": 12.0,
+          "cycletime": 1,
+          "range": 1000
+        },
+        {
+          "type": "engine",
+          "position": [
+            [ -68.835602, 2.546051, -231.045654 ],
+            [ 68.835602, 2.546051, -231.045654 ],
+            [ -105.438416, 2.230591, -236.291626 ],
+            [ 105.438416, 2.230591, -236.291626 ]
+          ],
+          "exhaustcolor": [ "blue", "blue", "blue", "blue" ]
+        }
+      ]
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+      "name": "Alien Object 1A",
+      "side": "pickup",
+      "artfileroot": "alien1_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 1B",
+      "side": "pickup",
+      "artfileroot": "alien1_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 1C",
+      "side": "pickup",
+      "artfileroot": "alien1_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 2A",
+      "side": "pickup",
+      "artfileroot": "alien2_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 2B",
+      "side": "pickup",
+      "artfileroot": "alien2_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 2C",
+      "side": "pickup",
+      "artfileroot": "alien2_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 3A",
+      "side": "pickup",
+      "artfileroot": "alien3_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 3B",
+      "side": "pickup",
+      "artfileroot": "alien3_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 3C",
+      "side": "pickup",
+      "artfileroot": "alien3_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 4A",
+      "side": "pickup",
+      "artfileroot": "alien4_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 4B",
+      "side": "pickup",
+      "artfileroot": "alien4_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 4C",
+      "side": "pickup",
+      "artfileroot": "alien4_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 5A",
+      "side": "pickup",
+      "artfileroot": "alien5_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 5B",
+      "side": "pickup",
+      "artfileroot": "alien5_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Object 5C",
+      "side": "pickup",
+      "artfileroot": "alien5_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 1A",
+      "side": "pickup",
+      "artfileroot": "alien1lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 1B",
+      "side": "pickup",
+      "artfileroot": "alien1lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 1C",
+      "side": "pickup",
+      "artfileroot": "alien1lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 2A",
+      "side": "pickup",
+      "artfileroot": "alien2lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 2B",
+      "side": "pickup",
+      "artfileroot": "alien2lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 2C",
+      "side": "pickup",
+      "artfileroot": "alien2lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 3A",
+      "side": "pickup",
+      "artfileroot": "alien3lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 3B",
+      "side": "pickup",
+      "artfileroot": "alien3lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 3C",
+      "side": "pickup",
+      "artfileroot": "alien3lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 4A",
+      "side": "pickup",
+      "artfileroot": "alien4lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 4B",
+      "side": "pickup",
+      "artfileroot": "alien4lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 4C",
+      "side": "pickup",
+      "artfileroot": "alien4lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 5A",
+      "side": "pickup",
+      "artfileroot": "alien5lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 5B",
+      "side": "pickup",
+      "artfileroot": "alien5lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Alien Small 5C",
+      "side": "pickup",
+      "artfileroot": "alien5lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_1a",
+      "name": "Danger Object 1A",
+      "side": "pickup",
+      "artfileroot": "mine1_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_1b",
+
+      "name": "Danger Object 1B",
+      "side": "pickup",
+      "artfileroot": "mine1_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_1c",
+
+      "name": "Danger Object 1C",
+      "side": "pickup",
+      "artfileroot": "mine1_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_2a",
+
+      "name": "Danger Object 2A",
+      "side": "pickup",
+      "artfileroot": "mine2_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_2b",
+
+      "name": "Danger Object 2B",
+      "side": "pickup",
+      "artfileroot": "mine2_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_2c",
+
+      "name": "Danger Object 2C",
+      "side": "pickup",
+      "artfileroot": "mine2_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_3a",
+
+      "name": "Danger Object 3A",
+      "side": "pickup",
+      "artfileroot": "mine3_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_3b",
+
+      "name": "Danger Object 3B",
+      "side": "pickup",
+      "artfileroot": "mine3_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_3c",
+
+      "name": "Danger Object 3C",
+      "side": "pickup",
+      "artfileroot": "mine3_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_4a",
+
+      "name": "Danger Object 4A",
+      "side": "pickup",
+      "artfileroot": "mine4_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_4b",
+
+      "name": "Danger Object 4B",
+      "side": "pickup",
+      "artfileroot": "mine4_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_4c",
+
+      "name": "Danger Object 4C",
+      "side": "pickup",
+      "artfileroot": "mine4_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_5a",
+
+      "name": "Danger Object 5A",
+      "side": "pickup",
+      "artfileroot": "mine5_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_5b",
+
+      "name": "Danger Object 5B",
+      "side": "pickup",
+      "artfileroot": "mine5_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_5c",
+
+      "name": "Danger Object 5C",
+      "side": "pickup",
+      "artfileroot": "mine5_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_1a",
+
+      "name": "Danger Small 1A",
+      "side": "pickup",
+      "artfileroot": "mine1lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_1b",
+
+      "name": "Danger Small 1B",
+      "side": "pickup",
+      "artfileroot": "mine1lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_1c",
+
+      "name": "Danger Small 1C",
+      "side": "pickup",
+      "artfileroot": "mine1lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_2a",
+
+      "name": "Danger Small 2A",
+      "side": "pickup",
+      "artfileroot": "mine2lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_2b",
+
+      "name": "Danger Small 2B",
+      "side": "pickup",
+      "artfileroot": "mine2lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_2c",
+
+      "name": "Danger Small 2C",
+      "side": "pickup",
+      "artfileroot": "mine2lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_3a",
+
+      "name": "Danger Small 3A",
+      "side": "pickup",
+      "artfileroot": "mine3lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_3b",
+
+      "name": "Danger Small 3B",
+      "side": "pickup",
+      "artfileroot": "mine3lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_3c",
+
+      "name": "Danger Small 3C",
+      "side": "pickup",
+      "artfileroot": "mine3lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_4a",
+
+      "name": "Danger Small 4A",
+      "side": "pickup",
+      "artfileroot": "mine4lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_4b",
+
+      "name": "Danger Small 4B",
+      "side": "pickup",
+      "artfileroot": "mine4lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_4c",
+
+      "name": "Danger Small 4C",
+      "side": "pickup",
+      "artfileroot": "mine4lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_5a",
+
+      "name": "Danger Small 5A",
+      "side": "pickup",
+      "artfileroot": "mine5lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_5b",
+
+      "name": "Danger Small 5B",
+      "side": "pickup",
+      "artfileroot": "mine5lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "danger_small_5c",
+
+      "name": "Danger Small 5C",
+      "side": "pickup",
+      "artfileroot": "mine5lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 1A",
+      "side": "pickup",
+      "artfileroot": "container1_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 1B",
+      "side": "pickup",
+      "artfileroot": "container1_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 1C",
+      "side": "pickup",
+      "artfileroot": "container1_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 2A",
+      "side": "pickup",
+      "artfileroot": "container2_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 2B",
+      "side": "pickup",
+      "artfileroot": "container2_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 2C",
+      "side": "pickup",
+      "artfileroot": "container2_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 3A",
+      "side": "pickup",
+      "artfileroot": "container3_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 3B",
+      "side": "pickup",
+      "artfileroot": "container3_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 3C",
+      "side": "pickup",
+      "artfileroot": "container3_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 4A",
+      "side": "pickup",
+      "artfileroot": "container4_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 4B",
+      "side": "pickup",
+      "artfileroot": "container4_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 4C",
+      "side": "pickup",
+      "artfileroot": "container4_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 5A",
+      "side": "pickup",
+      "artfileroot": "container5_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 5B",
+      "side": "pickup",
+      "artfileroot": "container5_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Object 5C",
+      "side": "pickup",
+      "artfileroot": "container5_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 1A",
+      "side": "pickup",
+      "artfileroot": "container1lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 1B",
+      "side": "pickup",
+      "artfileroot": "container1lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 1C",
+      "side": "pickup",
+      "artfileroot": "container1lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 2A",
+      "side": "pickup",
+      "artfileroot": "container2lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 2B",
+      "side": "pickup",
+      "artfileroot": "container2lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 2C",
+      "side": "pickup",
+      "artfileroot": "container2lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 3A",
+      "side": "pickup",
+      "artfileroot": "container3lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 3B",
+      "side": "pickup",
+      "artfileroot": "container3lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 3C",
+      "side": "pickup",
+      "artfileroot": "container3lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 4A",
+      "side": "pickup",
+      "artfileroot": "container4lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 4B",
+      "side": "pickup",
+      "artfileroot": "container4lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 4C",
+      "side": "pickup",
+      "artfileroot": "container4lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 5A",
+      "side": "pickup",
+      "artfileroot": "container5lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 5B",
+      "side": "pickup",
+      "artfileroot": "container5lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 5C",
+      "side": "pickup",
+      "artfileroot": "container5lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 50.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 6A",
+      "side": "pickup",
+      "artfileroot": "container6lod_a",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 60.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 6B",
+      "side": "pickup",
+      "artfileroot": "container6lod_b",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 60.0
+    },
+    {
+      //---------------------------------- small object data --------------------------------
+      "key": "",
+
+      "name": "Container Small 6C",
+      "side": "pickup",
+      "artfileroot": "container6lod_c",
+      "meshscale": 1.0,
+      "radarscale": 1.0,
+      "exclusionradius": 60.0
+    }
+  ]
+
+
+}
+// keep this end-of-file line, for parsing safety
+
+
+
+
